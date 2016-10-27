@@ -1,0 +1,33 @@
+{
+  "name": "veml6070-sensor",
+  "version": "0.0.1",
+  "description": "A Node.js I2C driver for the Vishay Semiconductors VEML6070 UVA Light Sensor",
+  "main": "VEML6070.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skylarstein/veml6070-sensor.git"
+  },
+  "keywords": [
+    "VEML6070",
+    "UV",
+    "UVA",
+    "Light",
+    "Sensor",
+    "Adafruit",
+    "Raspberry",
+    "Pi",
+    "Beaglebone"
+  ],
+  "author": "Skylar Stein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skylarstein/veml6070-sensor/issues"
+  },
+  "homepage": "https://github.com/skylarstein/veml6070-sensor#readme",
+  "dependencies": {
+    "i2c-bus": "^1.1.2"
+  }
+}
