@@ -33,7 +33,6 @@ class VEML6070 {
 
   readSensorData() {
     return new Promise((resolve, reject) => {
-
       this.i2cBus.i2cRead(this.VEML6070_ADDR_H, 1, new Buffer(1), (err, bytesRead, bufferHigh) => {
         if(err) {
           return reject(err);
