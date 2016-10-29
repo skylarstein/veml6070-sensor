@@ -1,10 +1,10 @@
 {
   "name": "veml6070-sensor",
-  "version": "0.0.3",
-  "description": "A Node.js I2C driver for the Vishay Semiconductors VEML6070 UVA Light Sensor",
+  "version": "0.0.4",
+  "description": "A Node.js I2C module for the Vishay Semiconductors VEML6070 UVA Light Sensor",
   "main": "VEML6070.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -29,5 +29,9 @@
   "homepage": "https://github.com/skylarstein/veml6070-sensor#readme",
   "dependencies": {
     "i2c-bus": "^1.1.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
   }
 }
