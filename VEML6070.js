@@ -1,7 +1,7 @@
 /*
   VEML6070.js
 
-  I2C driver for the Vishay Semiconductors VEML6070 UVA Light Sensor
+  A Node.js I2C module for the Vishay Semiconductors VEML6070 UVA Light Sensor
 */
 
 'use strict';
@@ -20,7 +20,7 @@ class VEML6070 {
     return new Promise((resolve, reject) => {
       let integrationTime = (options && options.hasOwnProperty('integrationTime')) ? options.integrationTime : VEML6070.VEML6070_INTEGRATION_TIME_1_T();
       let cmd = (integrationTime & 0x03) << 2;
-      this.i2cBus.i2cWrite(this.VEML6070_ADDR_L, 1, Buffer.from([cmd]), (err, bytesWritten, buffer) => {
+      this.i2cBus.i2cWrite(this.VEML6070_ADDR_L, 1, new Buffer([cmd]), (err, bytesWritten, buffer) => {
         if(err) {
           return reject(err);
         }
