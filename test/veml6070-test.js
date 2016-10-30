@@ -2,9 +2,9 @@
 
 process.env.NODE_ENV = 'test';
 
-const chai   = require('chai');
+const chai     = require('chai');
 const VEML6070 = require('../VEML6070.js');
-const expect = chai.expect;
+const expect   = chai.expect;
 
 describe('veml6070-sensor', () => {
   it('it should communicate with the device', () => {

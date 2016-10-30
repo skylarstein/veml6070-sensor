@@ -13,7 +13,7 @@ const VEML6070 = require('veml6070-sensor');
 
 // VEML6070 constructor options object is optional, i2cBusNo defaults to 1
 //
-const veml6070 = new VEML6070({i2cBusNo : 1});
+const veml6070 = new VEML6070( {i2cBusNo : 1} );
 
 const readSensorData = () => {
   veml6070.readSensorData()
