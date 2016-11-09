@@ -32,7 +32,7 @@ describe('veml6070-sensor', () => {
           });
       })
       .catch((err) => {
-        done(err)
+        done(err);
       });
   });
 });

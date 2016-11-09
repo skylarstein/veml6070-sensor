@@ -16,7 +16,7 @@ const readSensorData = () => {
       console.log(`VEML6070 read error: ${err}`);
       setTimeout(readSensorData, 2000);
     });
-}
+};
 
 // VEML6070 init options object is optional, integrationTime defaults to VEML6070.VEML6070_INTEGRATION_TIME_1_T()
 //
