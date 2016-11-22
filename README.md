@@ -40,8 +40,7 @@ veml6070.init({integrationTime : VEML6070.VEML6070_INTEGRATION_TIME_1_T()})
 ##Example Output
 
 ```
-> sudo node example.js          
-VEML6070 initialized with VEML6070_INTEGRATION_TIME_1_T
+> sudo node example.js
 data = {
   "uv": 3839
 }
