@@ -22,7 +22,7 @@ const readSensorData = () => {
   veml6070.readSensorData()
     .then((data) => {
       console.log(`data = ${JSON.stringify(data, null, 2)}`);
-      setTimeout(readSensorData, 2000);
+      setTimeout(readSensorData, 1000);
     })
     .catch((err) => {
       console.log(`VEML6070 read error: ${err}`);
